@@ -1,0 +1,110 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+background-color: #f4f4f4;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #A8BBA3;
+padding: 10px 20px;
+border-bottom: 2px solid #ccc;
+}
+
+header input[type="text"] {
+padding: 5px;
+font-size: 1rem;
+}
+
+main {
+margin-top: 20px;
+}
+
+h1 {
+text-align: center;
+color: #333;
+}
+
+.contenedor-principal {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.columna-izquierda {
+flex: 2;
+display: flex;
+flex-direction: column;
+gap: 15px;
+height: 100px;
+}
+
+.columna-derecha {
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+height: 100px;
+}
+
+.definicion {
+flex: 1 1 300px;
+background-color: #F7F4EA;
+padding: 15px;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+
+.acciones {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.me-gusta {
+background-color: #B87C4C;
+color: white;
+border: none;
+padding: 8px 12px;
+cursor: pointer;
+border-radius: 3px;
+}
+
+.contador {
+font-size: 0.9rem;
+color: #333;
+}
+
+.agregar-card {
+align-items: flex-end;
+text-align: right;
+}
+
+.agregar-card h2 {
+margin-bottom: 10px;
+color: #333;
+}
+
+#agregar {
+background-color: #739d67;
+color: white;
+border: none;
+padding: 10px 16px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#mensaje {
+text-align: center;
+font-style: italic;
+margin-top: 20px;
+color: #666;
+}
