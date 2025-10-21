@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Network Feed</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header>Network</header>
+
+        <div class="container">
+            <!-- Perfil-->
+            <div class="perfil">
+            <img src="avatar.png" alt="Foto de perfil">
+            <h3>Daniela Zuna</h3>
+        </div>
+        <div> 
+
+        </div>
+        <div class="feed">
+            <h2 class="feed-title">Your Feed</h2>
+            <!-- publicaion 1 -->
+            <div class="post">
+                <div class="usuario">Linn O.</div>
+                <div class="mensaje">
+                    Acabo de completar un nuevo bot de Discord, ¡quedó bastante cool!
+                    <a href="https://discord.com" target="_blank">link</a>
+                </div>
+                <div class="like-section">
+                    <button class="like-button" onclick="darLike(this)">Like</button>
+                    <span class="like-count">0 Like(s)</span>
+                </div>
+            </div>
+
+            <!-- publicaion 2 -->
+            <div class="post">
+                <div class="usuario">Lina K.</div>
+                <div class="message">
+                    Acabo de terminar este <a href="https://ejemplo.com/comic" target="_blank">nuevo cómic</a>, denle un vistazo.
+                </div>
+                <div class="like-section">
+                    <button class="like-button" onclick="darLike(this)">Like</button>
+                    <span class="like-count">0 Like(s)</span>
+                </div>
+            </div>
+
+            <!-- publicaion 3 -->
+            <div class="post">
+                <div class="usuario">Mateo H.</div>
+                <div class="message">
+                    No puedo dejar de escuchar este <a href="https://ejemplo.com/album" target="_blank">álbum</a>. ¿A quién más le gusta?
+                </div>
+                <div class="like-section">
+                    <button class="like-button" onclick="darLike(this)">Like</button>
+                    <span class="like-count">0 Like(s)</span>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
