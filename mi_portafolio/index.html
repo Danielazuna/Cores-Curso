@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Mi Portafolio Personal</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <img id="logo" src="https://placehold.co/400" alt="Logo">
+            <div class="links"> Inicio - Servicios - Contacto </div>
+        </div>
+        <div class="seccion" id="presentacion">
+            <h1>¡Hola! Soy Daniela</h1>
+            <p class="centrado">Bienvenido a mi portafolio personal.</p>
+        </div>
+        <div class="seccion" id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>
+                Me gusta el desarrollo web, el diseño visual, base de datos y aprender
+                cosas nuevas cada día.
+            </p>
+        </div>
+        <div class="seccion" id="intereses">
+        <h2>Mis intereses</h2>
+        <ul>
+            <li>Programación</li>
+            <li>Diseño</li>
+            <li>Videojuegos</li>
+            <li>Música</li>
+            <li>Leer</li>
+        </ul>
+        </div>
+        <div class="seccion" id="artistas">
+            <h2>Top 5 Artistas Favoritos</h2>
+            <ol>
+                <li>One Direction<br /><img
+                    src="https://tse2.mm.bing.net/th/id/OIP.lcrDWSTY1kh0DW1jEYTNsgHaEs?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="One Direction"
+                    class="imagen-artista" />
+                </li>
+                <li>Imagine Dragons<br /><img
+                    src="https://tse1.mm.bing.net/th/id/OIP.abr00UcfScu3ODg1pRKvLwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Imagine Dragons"
+                    class="imagen-artista"/>
+                </li>
+                <li>Scorpions<br /><img/>
+                </li>
+                <li>Ghost<br /><img
+                    src="https://www.diariodeunrockero.es/wp-content/uploads/2023/04/ghost-1637925769-1637925769.390646.-1x1780-1.jpg"
+                    alt="Ghost"
+                    class="imagen-artista"/>
+                </li>
+            </ol>
+        </div>
+        <div class="seccion" id="favoritos">
+            <h2>Tabla de Favoritos</h2>
+            <table class="tabla-favoritos">
+                <tr>
+                    <th>Categoría</th>
+                    <th>Favorito</th>
+                </tr>
+                <tr>
+                    <td>Película</td>
+                    <td>Interstellar</td>
+                </tr>
+                <tr>
+                    <td>Serie</td>
+                    <td>Dark</td>
+                </tr>
+                <tr>
+                    <td>Juego</td>
+                    <td>God of War</td>
+                </tr>
+                <tr>
+                    <td>Comida</td>
+                    <td>Papas fritas</td>
+                </tr>
+                <tr>
+                    <td>Lenguaje</td>
+                    <td>Python</td>
+                </tr>
+            </table>
+        </div>
+        <div class="seccion" id="cancion">
+            <h2>Mi Canción Favorita</h2>
+            <iframe
+                height="400px"
+                src="https://open.spotify.com/embed?uri=spotify:track:6Ok4D4w117mSi9OP8tmrpg"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media">
+            </iframe>
+        </div>
+        <div class="seccion galeria" id="galeria">
+            <h2>Galería</h2>
+            <img src="https://lalarebelo.com/wp-content/uploads/2017/02/22-Salar-de-Uyuni-deserto-de-sal-bolivia.jpg"
+                alt="Imagen 1"/>
+            <img src="https://tse2.mm.bing.net/th/id/OIP.zyojIuAJs8z2uIkUcwBSDQHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Imagen 2"/>
+            <img src="https://www.gadoo.com.br/wp-content/uploads/2017/05/0156.jpg"
+                alt="Imagen 3"/>
+        </div>
+        <div class="seccion" id="perfil">
+            <h2>Mi Foto de Perfil</h2>
+            <img src="avatar.png" class="perfil" alt="Foto de perfil" />
+        </div>
+        <div class="seccion" id="redes">
+            <h2>Mis Redes Sociales</h2>
+            <a class="enlace-red-social github" href="https://github.com/Danielazuna">GitHub</a><br />
+            <a class="enlace-red-social linkedin"
+                href="https://linkedin.com/in/daniela-zuna-455a15219">LinkedIn</a><br />
+            <a class="enlace-red-social instagram"
+                href="https://instagram.com/tuusuario">Instagram</a>
+        </div>
+        <div class="seccion" id="contacto">
+            <h2>Contáctame</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" />
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero">
+                    <option value="">Selecciona una opción</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <h3>Intereses:</h3>
+                <input type="checkbox" name="interes" value="html" id="html" />
+                <label for="html">HTML</label>
+
+                <input type="checkbox" name="interes" value="css" id="css" />
+                <label for="css">CSS</label><br />
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </body>
+</html>
