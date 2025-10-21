@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contador</title>
+        <style>
+            button {
+            font-size: 2rem;
+            padding: 10px 20px;
+            cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+    <button id="contador1">0</button>
+    <!-- ejercicio alerta-->
+    <button onclick="mostrarMensaje()">Haz clic aquí</button>
+    
+    <!-- ejercicio contador clicks-->
+    <h1>Has hecho <span id="contador">0</span> clics</h1>
+    <button onclick="incrementar()">Hacer clic</button>
+    <script>
+        
+    </script>
+    <script>
+        /*document.getElementById("contador").addEventListener("click", function() {
+            var numero = parseInt(this.innerText);
+            this.innerText = numero + 1;
+        });
+        function mostrarMensaje() {
+        alert("¡Hiciste clic en el botón!");
+        }*/
+            /*ejercicio contador clicks*/
+            let clics = 0;
+            function incrementar() {
+                clics++;
+                document.getElementById("contador").innerText = clics;
+            }
+    </script>
+    </body>
+</html>

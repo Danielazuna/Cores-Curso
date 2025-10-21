@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tarjeta Usuario</title>
+    </head>
+    <body>
+        <header class="navbar">
+            <h1 class="logo">Perfil</h1>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Mi Perfil</a>
+                <a href="#">Encontrar Conexiones</a>
+                <button class="cerrar-sesion">Cerrar Sesión</button>
+            </nav>
+        </header>
+        <div class="layout-principal">
+            <div class="columna-izquierda">
+                <div class="card">
+                    <div class="banner"></div>
+                    <img src="img/avatar.png" alt="Foto perfil" class="imagen">
+                    <div class="bio">
+                        <h2 class="titulo">Daniela Zuna</h2>
+                        <h3 class="subtitulo">Calama, Chile.</h3>
+                        <h4 class="subtitulo">Desarrolladora de UX/UI | Desarrolladora Frontend | Amante de la naturaleza</h4>
+                        <p class="descripcion">
+                            Apasionada por crear experiencias digitales hermosas y funcionales. 
+                            Cuando no estoy diseñando o programando, me gusta hacer fotos, leer o jugar. 
+                            También me encanta la música e ir a restaurantes.
+                        </p>
+                        <button class="boton">Editar Perfil</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="contenido">
+                        <h2 class="titulo">Educación</h2>
+                        <p class="descripcion">
+                            <strong>Analista Programador</strong> - Inacap </br>
+                            Mar 2023 - Dic 2024</br>
+                            Tecnologías: Python, C#, Sql, Android studio
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="columna-derecha">
+                <div class="card">
+                    <div class="contenido"> 
+                        <h3>Solicitudes de Conexión (2)</h3>
+                        <ul class="lista-solicitudes">
+                            <li><img src="img/red.png" alt="red">Red
+                                <div class="acciones">
+                                    <button class="aceptar">✔</button>
+                                    <button class="rechazar">✖</button>
+                                </div>
+                            </li>
+                            <li><img src="img/black.png" alt="black">Black 
+                                <div class="acciones">
+                                    <button class="aceptar">✔</button>
+                                    <button class="rechazar">✖</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="contenido"> 
+                        <h3>Tus Conexiones (4)</h3>
+                        <ul class="lista-conexiones">
+                            <li><img src="img/black.png" alt="black">Black</li>
+                            <li><img src="img/blue.png" alt="blue">Blue</li>
+                            <li><img src="img/red.png" alt="red">Red</li>
+                            <li><img src="img/green.png" alt="green">Green</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

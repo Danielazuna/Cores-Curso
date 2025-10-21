@@ -1,0 +1,230 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.layout-principal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.columna-izquierda {
+    flex: 1 1 600px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.columna-derecha {
+    flex: 1 0 400px;
+    margin-right: 25px;
+}
+
+/* --- NAVBAR SUPERIOR --- */
+.navbar {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #03a9f4;
+}
+
+/* Tarjeta principal */
+.card {
+    background-color: white;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* importante para que el banner respete el borde redondeado */
+    position: relative;
+    margin: 20px;
+    
+}
+
+/* Banner azul dentro del card */
+.banner {
+    width: 100%;
+    height: 100px;
+    background-color: #2196f3;
+    position: relative;
+}
+
+/* Imagen circular sobre el banner */
+.imagen {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    position: absolute;
+    top: 50px; /* baja la imagen para que se solape entre el banner y el cuerpo */
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+.bio {
+    padding: 90px 30px 40px; /* espacio superior para dejar sitio a la imagen */
+}
+
+.contenido{
+    padding: 30px 30px; 
+}
+
+/* Título y subtítulos */
+.titulo {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Párrafo descriptivo */
+.descripcion {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin: 20px 0;
+    
+}
+ul li{
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+}
+.lista-conexiones img, .lista-solicitudes img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+    border: 2px solid #2196f3;
+}
+
+
+/* Botón */
+.boton {
+    background-color: #b1b5b1;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.boton:hover {
+    background-color: #2196f3;
+}
+
+
+.cerrar-sesion {
+    background-color: #03a9f4;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cerrar-sesion:hover {
+    background-color: #0288d1;
+}
+.acciones {
+    display: flex;
+    gap: 8px;
+    margin-left: 20px;
+
+}
+
+.acciones button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.aceptar {
+    background-color: #e91e63;
+}
+
+.rechazar {
+    background-color: #9e9e9e;
+}
+
+.acciones button:hover {
+    opacity: 0.8;
+}
+
+
+/* --- Responsivo --- */
+@media (max-width: 480px) {
+    .imagen {
+        width: 100px;
+        height: 100px;
+        top: 80px;
+    }
+
+    .contenido {
+        padding: 80px 20px 30px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .subtitulo {
+        font-size: 14px;
+    }
+}
+
